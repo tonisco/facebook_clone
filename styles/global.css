@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.nav-icon {
+		@apply relative h-6 text-gray-500 px-4 mx-2;
+	}
+
+	.nav-icon-active {
+		@apply before:absolute before:w-full before:border-b-4;
+	}
+
+	.outline-avatar {
+		outline: 3px solid #1877f2;
+	}
+}
