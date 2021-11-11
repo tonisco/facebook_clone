@@ -14,4 +14,16 @@
 	.outline-avatar {
 		outline: 3px solid #1877f2;
 	}
+
+	.h8 {
+		@apply relative overflow-hidden h-8 w-8 rounded-full;
+	}
+
+	.reaction-icon {
+		@apply relative overflow-hidden rounded-full border border-white transform;
+	}
+
+	.online-dot {
+		@apply h-2 w-2 border border-white bg-green-600 rounded-full absolute bottom-0.5 right-1;
+	}
 }
