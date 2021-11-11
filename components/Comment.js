@@ -2,7 +2,7 @@ import Image from "next/image"
 import { Name } from "../data/UserStory"
 const Comment = () => {
 	return (
-		<section className="p-3">
+		<section className="m-3">
 			<div className="flex items-center gap-3 mb-3">
 				<figure className="h8">
 					<Image src="/images/new4.jpg" layout="fill" />
@@ -42,20 +42,20 @@ const Comment = () => {
 							<p className="text-xs text-gray-600 -ml-1">4</p>
 						</div>
 					</div>
-					<div className="flex text-sm text-gray-600 font-semibold gap-3 capitalize ml-1">
+					<div className="flex text-sm mt-1 text-gray-600 font-semibold gap-3 capitalize ml-1">
 						<p>like</p>
 						<p>reply</p>
 						<p>2h</p>
 					</div>
 					{/* more comment */}
 					<div className="flex gap-3 items-start mt-3">
-						<figure className="h8">
+						<figure className="h8 flex-shrink-0">
 							<Image src="/images/new4.jpg" layout="fill" />
 							<div className="online-dot"></div>
 						</figure>
-						<div className="relative max-w-[90%]">
+						<div className="relative ">
 							<div className="flex-grow bg-gray-200 p-2 rounded-md">
-								<p className="font-bold">{Name[10]}</p>
+								<p className="font-bold">{Name[11]}</p>
 								<p>
 									Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 									Cumque, perspiciatis aperiam corporis illum ipsam

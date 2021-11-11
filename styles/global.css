@@ -4,7 +4,7 @@
 
 @layer components {
 	.nav-icon {
-		@apply relative h-6 text-gray-500 px-4 mx-2;
+		@apply relative h-6 text-gray-500;
 	}
 
 	.nav-icon-active {
@@ -17,6 +17,10 @@
 
 	.h8 {
 		@apply relative overflow-hidden h-8 w-8 rounded-full;
+	}
+
+	.h6 {
+		@apply relative overflow-hidden h-6 w-6 sm:h-8 sm:w-8 rounded-full;
 	}
 
 	.reaction-icon {

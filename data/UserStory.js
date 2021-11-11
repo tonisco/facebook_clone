@@ -11,7 +11,6 @@ const Name = [
 	"Jamal",
 	"Burdette Casper58",
 	"Antonietta Ledner61",
-	"Eliane ",
 	"Celine Parisian",
 ]
 

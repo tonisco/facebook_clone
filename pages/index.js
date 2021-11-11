@@ -3,6 +3,8 @@ import Header from "../components/Header"
 import Stories from "../components/Stories"
 import StoryCreate from "../components/StoryCreate"
 import Posts from "../components/Posts"
+import Links from "../components/Links"
+import Ads from "../components/Ads"
 
 export default function Home() {
 	return (
@@ -10,15 +12,18 @@ export default function Home() {
 			<Head>
 				<title>People Book</title>
 				<link rel="icon" href="/favicon.ico"></link>
-				{/* <meta>Connect with your friends</meta> */}
+				<meta name="description" content="Connect with your friends" />
 			</Head>
-			<Header>
-				<div className="bg-gray-200 flex items-center flex-col">
+			<Header />
+			<div className="bg-gray-200 flex content-between pt-20">
+				<Links />
+				<div className=" flex items-center flex-col w-full sm:w-[70vw] md:w-[50vw] lg:w-[40vw] mx-auto">
 					<Stories />
 					<StoryCreate />
 					<Posts />
 				</div>
-			</Header>
+				<Ads />
+			</div>
 		</div>
 	)
 }
