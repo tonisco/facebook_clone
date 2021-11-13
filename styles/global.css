@@ -4,7 +4,7 @@
 
 @layer components {
 	.nav-icon {
-		@apply relative h-6 text-gray-500;
+		@apply relative h-7 text-gray-500;
 	}
 
 	.nav-icon-active {
@@ -20,7 +20,7 @@
 	}
 
 	.h6 {
-		@apply relative overflow-hidden h-6 w-6 sm:h-8 sm:w-8 rounded-full;
+		@apply relative overflow-hidden h-6 w-6 sm:h-8 sm:w-8 rounded-full cursor-pointer;
 	}
 
 	.reaction-icon {
@@ -30,4 +30,51 @@
 	.online-dot {
 		@apply h-2 w-2 border border-white bg-green-600 rounded-full absolute bottom-0.5 right-1;
 	}
+
+	.links-cover {
+		@apply flex items-center gap-2 font-semibold cursor-pointer;
+	}
+
+	.dark-red {
+		@apply text-red-800;
+	}
+
+	.light-orange {
+		@apply text-yellow-300;
+	}
+
+	.yellow {
+		@apply text-yellow-500;
+	}
+
+	.blue {
+		@apply text-blue-500;
+	}
+
+	.red {
+		@apply text-red-500;
+	}
+	.dark-yellow {
+		@apply text-yellow-800;
+	}
+}
+
+.translate1 {
+	transform: translateX(-25%);
+}
+
+.translate2 {
+	transform: translateX(-50%);
+}
+.translate3 {
+	transform: translateX(-75%);
+}
+.translate4 {
+	transform: translateX(-100%);
+}
+.translate5 {
+	transform: translateX(-125%);
+}
+.translate6 {
+	transform: translateX(-150%);
 }
