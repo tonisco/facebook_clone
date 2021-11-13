@@ -18,7 +18,7 @@ const Header = () => {
 		<div className="fixed w-full z-40">
 			<header className="bg-white shadow-lg w-full">
 				<div className="flex justify-between w-full max-w-7xl p-3 mx-auto">
-					<div className=" flex justify-between items-center gap-4 sm:gap-x-6 w-full max-w-3xl">
+					<div className=" flex justify-between items-center gap-4 sm:gap-x-6 w-full max-w-md md:max-w-2xl lg:max-w-3xl ">
 						<h1 className="text-2xl hidden sm:block font-semibold text-blue-700">
 							PEOPLEBOOK
 						</h1>
@@ -41,7 +41,7 @@ const Header = () => {
 							<MenuIcon className="nav-icon sm:hidden" />
 						</div>
 					</div>
-					<div className="flex capitalize items-center">
+					<div className="flex capitalize items-center flex-shrink-0">
 						{session ? (
 							<>
 								<img

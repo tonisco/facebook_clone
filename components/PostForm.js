@@ -148,7 +148,7 @@ const PostForm = ({ createToggler }) => {
 							</header>
 							<button
 								class={`${
-									loading ? "bg-700" : "bg-blue-500"
+									loading ? "bg-blue-700" : "bg-blue-500"
 								} hover:bg-blue-700 text-white font-bold py-2 px-4 rounded`}
 							>
 								Post

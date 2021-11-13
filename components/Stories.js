@@ -143,7 +143,7 @@ const Stories = () => {
 
 	return (
 		<div
-			className="flex gap-4 pt-5 mb-5 w-full overflow-x-scroll scrollbar scrollbar-hide cursor-auto max-w-2xl px-1 sm:mx-0"
+			className="flex gap-4 pt-0 md:pt-5 mb-2 md:mb-5 w-full overflow-x-scroll scrollbar scrollbar-hide cursor-auto max-w-2xl px-1 sm:mx-0"
 			ref={scrollRef}
 			onMouseMove={slider}
 			onMouseDown={startDragging}
@@ -190,7 +190,7 @@ const Stories = () => {
 							<div class="text-gray-900 font-bold text-2xl w-full pb-2 border-b border-gray-200 mb-5">
 								Create a story
 							</div>
-
+							{/* story popup */}
 							<main class=" flex flex-col items-start w-full px-3 gap-4">
 								<div className="links-cover">
 									<figure className="h6">
@@ -200,7 +200,9 @@ const Stories = () => {
 									</figure>
 									<p className="text-gray-900">{session?.user?.name}</p>
 								</div>
-
+								<p className="text-red-600 text-center text-sm font-semibold self-center">
+									All images disappear after 24hrs
+								</p>
 								<form className="w-full flex flex-col gap-3" onSubmit={sendStory}>
 									{/* image input */}
 									{storyImage && (
