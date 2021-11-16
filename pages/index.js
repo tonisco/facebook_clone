@@ -14,8 +14,9 @@ export default function Home() {
 		<div className="">
 			<Head>
 				<title>People Book</title>
-				<link rel="icon" href="/favicon.ico"></link>
+				<link rel="icon" href="/images/p-logo2.png"></link>
 				<meta name="description" content="Connect with your friends" />
+				<meta name="description" content="A facebook clone" />
 			</Head>
 			<Header />
 			<div className="bg-gray-200 flex content-between pt-20 min-h-screen">

@@ -102,8 +102,7 @@ const Stories = () => {
 			if (user.id && user.timestamp) {
 				const expired = 60 * 60 * 24
 				const expiredTime = expired + user.timestamp.seconds
-				const difference = expiredTime - user.timestamp.seconds
-				if (difference <= 1) {
+				if (new Date().getTime() > expiredTime) {
 					const imageRef = ref(storage, `${user.imagePath}.${user.imageType}`)
 					await deleteObject(imageRef)
 						.then((value) => {
