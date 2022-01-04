@@ -30,10 +30,6 @@ const PostForm = ({ createToggler }) => {
 		}
 	}
 
-	const checkNewLine = (v) => {
-		console.log(v.length)
-	}
-
 	const uploadPost = async (e) => {
 		e.preventDefault()
 		if (loading) return
@@ -108,7 +104,6 @@ const PostForm = ({ createToggler }) => {
 								className="w-full outline-none h-10 p-2 rounded-lg"
 								onChange={(e) => {
 									setCaption(e.target.value)
-									checkNewLine(e.target.value)
 								}}
 							/>
 							{/* image input */}

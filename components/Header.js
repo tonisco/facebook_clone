@@ -59,15 +59,15 @@ const Header = () => {
 								</h2>
 							</>
 						) : (
-							<div className="flex">
-								<LoginIcon className="nav-icon" />
-								<Link
-									href="/signin"
-									className="text-gray-900 truncate w-15 text-sm sm:text-lg"
-								>
+							<Link
+								href="/signin"
+								className="text-gray-900 truncate w-15 text-sm sm:text-lg"
+							>
+								<a className="flex">
+									<LoginIcon className="nav-icon" />
 									Sign In
-								</Link>
-							</div>
+								</a>
+							</Link>
 						)}
 					</div>
 				</div>
